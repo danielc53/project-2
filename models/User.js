@@ -24,6 +24,10 @@ User.init(
         type: DataTypes.STRING,
         allowNull: false,
     },
+    bio: {
+        type: DataTypes.STRING,
+        allowNull: true,
+    },
     username: {
       type: DataTypes.STRING,
       allowNull: false,
