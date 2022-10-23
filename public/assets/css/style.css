@@ -1,5 +1,44 @@
-.box {
-    height: 50px;
-    width: 50px;
-    outline: 1px solid black;
+:root {
+    background-image: url(../img/login-background.jpg);
+    background-position: center;
+    background-size: 120%;
+
+    
+    
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    width: 100%;
+    padding-top: 10px;
+    text-align: center; 
+}
+
+#login-text {
+    margin-bottom: 10%;
+}
+
+.form {
+    min-height: 220px;
+    margin: 5px;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 5%;
+    position: relative;
+    display: block;
+    align-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.input {
+    display: block;
+    margin-bottom: 10px;
+    padding: 2%;
 }
