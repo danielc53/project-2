@@ -1,3 +1,4 @@
+const { DataTypes } = require('sequelize');
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
@@ -19,13 +20,20 @@ Post.init(
             type: DataTypes.STRING,
             allowNull: false,
         },
+        user_post: {
+            type: DataTypes.STRING,
+            references: {
+                model: 'user',
+                key: 'id',
+            },
+        },
     },
     {
         sequelize,
         timestamps: true,
         freezeTableName: true,
         underscored: true,
-        modelName: 'Post',
+        modelName: 'post',
       }
 );
 
