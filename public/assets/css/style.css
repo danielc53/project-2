@@ -2,9 +2,12 @@
     background-image: url(../img/login-background.jpg);
     background-position: center;
     background-size: 120%;
-
-    
-    
+/* Color pallet options 1 (match login background) */
+    --deep-champagne: #FFD699;
+    --congo_pink: #FF8380;
+    --persian-rose: #F2379A;
+    --steel-blue: #567D9A;
+    --spanish-violet: #452386;
 }
 
 .login {
