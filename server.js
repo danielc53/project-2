@@ -3,7 +3,7 @@ const express = require('express');
 const app = express();
 const sequelize = require('./config/connection');
 const dotenv = require('dotenv');
-const { dirname } = require('path');
+const path = require('path');
 const postRouter = require('./Routes/post')
 
 dotenv.config();
