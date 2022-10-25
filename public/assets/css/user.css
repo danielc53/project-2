@@ -18,7 +18,7 @@
     display: flex;
     border: 1px solid black;
     height: 80px;
-    /* background-color: var(--deep-champagne); */
+    background-color: var(--deep-champagne);
 }
 
 /* defines home icon size and position inside of navbar */
@@ -26,6 +26,7 @@
     background-image: url(../img/home-icon.png);
     height: 80px;
     width: 80px;
+    background-repeat: no-repeat;
 }
 
 

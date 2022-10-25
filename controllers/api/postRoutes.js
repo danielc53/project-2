@@ -1,6 +1,6 @@
 const { Router } = require('express');
 const router = Router();
-const post = require('./Post')
+const post = require('./post-routes')
 
 router.post('/', async (req, res) => {
     const newPost = req.body;
