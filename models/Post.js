@@ -34,6 +34,8 @@ Post.init(
         freezeTableName: true,
         underscored: true,
         modelName: 'post',
+        modelName: 'Post',
+        modelName: 'Post',
       }
 );
 
