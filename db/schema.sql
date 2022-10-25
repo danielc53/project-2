@@ -9,9 +9,9 @@ USE gamers_db;
 CREATE TABLE games (
     id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     gameTitle VARCHAR(64) NOT NULL,
-    Summary VARCHAR(255),
+    summary VARCHAR(255),
     onlineStatus BOOLEAN,
-    singlePlayer
+    singlePlayer BOOLEAN,
 );
 
 CREATE TABLE users (
@@ -25,6 +25,8 @@ CREATE TABLE users (
 
 CREATE TABLE game_posts (
 	id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    gameID INT,
+    userID INT,
     FOREIGN KEY (gameID) REFERENCES games(id),
     FOREIGN KEY (userID) REFERENCES users(id),
     messageContent VARCHAR(255) NOT NULL,
