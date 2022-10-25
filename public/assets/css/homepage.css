@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* background-image: url(../img/alternate-background.png); */
+    /* Color pallet options 1 (match login background) */
+    --deep-champagne: #FFD699;
+    --congo_pink: #FF8380;
+    --persian-rose: #F2379A;
+    --steel-blue: #567D9A;
+    --spanish-violet: #452386;
+}
+
+/* defines size and color of the parent navbar */
+.navbar {
+    display: flex;
+    border: 1px solid black;
+    height: 80px;
+    /* background-color: var(--deep-champagne); */
+}
+
+/* defines home icon size and position inside of navbar */
+.home-btn {
+    background-image: url(../img/home-icon.png);
+    height: 80px;
+    width: 80px;
+    background-repeat: no-repeat;
+    
+}
