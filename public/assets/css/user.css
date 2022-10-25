@@ -34,19 +34,22 @@
     display: flex;
     border: 1px solid black;
     height: 450px;
-    margin: 8% 8% 3% 8% 
+    margin: 8% 8% 3% 8%;
+    background-color: #FF8380;
 }
 
 .flexbox-profile-pic {
     border: 1px solid black;
     flex-grow: 1;
     margin: 2% 5% 2% 2%;
+    background-color: #567D9A;
 }
 
 .flexbox-info {
     border: 1px solid black;
     flex-grow: 1;
     margin: 2% 2% 2% 5%;
+    background-color: #567D9A;
 }
 
 .flexbox-container2 {
@@ -56,6 +59,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    background-color: #FF8380;
 }
 
 .game {
