@@ -14,7 +14,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    justify-content: center;
     height: 500px;
     width: 100%;
     padding-top: 10px;
@@ -25,23 +24,57 @@
     margin-bottom: 10%;
 }
 
+#login-btn {
+    margin-top: 10%;
+}
+
 .form {
-    min-height: 220px;
+    min-width: 250px;
+    min-height: 300px;
     margin: 5px;
     padding-top: 3%;
     padding-bottom: 3%;
     padding-left: 15px;
     padding-right: 15px;
     border-radius: 5%;
-    position: relative;
-    display: block;
-    align-content: center;
-    align-items: center;
-    background-color: white;
+    background-color: var(--congo_pink);
 }
 
 .input {
     display: block;
-    margin-bottom: 10px;
-    padding: 2%;
+    padding: 5px;
+    border-radius: 10px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    
+}
+.btn {
+    float: inline-end;
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.login-link {
+    padding-top: 20px;
+}
+
+#register-text {
+    padding: 5px;
+}
+
+.center-input {
+    margin-left: 12.5%;
+}
+
+.big-text {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: larger;
+}
+
+.footing {
+    display: flex;
+    justify-content: center;
+    margin-top: 22.5%;
 }
