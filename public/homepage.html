@@ -1,37 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/homepage.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/homepage.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <title>Home Page</title>
-</head>
-<body>
-    <div class="navbar">
-        <div class="home-btn" href="./assets/img/home-icon.png"></div>
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">Gammers</a>
+      <ul class="nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Games</a></li>
+        <li><a href="#">Login</a></li>
+      </ul>
+      <div class="action">
+        <div class="searchBx">
+          <a href="#"><i class="bx bx-search"></i></a>
+          <input type="text" placeholder="Search Games" />
+        </div>
+      </div>
+      <div class="toggleMenu"></div>
+    </header>
+
+    <!-- Home Banner -->
+    <div class="banner">
+      <div class="bg">
+        <div class="content">
+          <h2>
+            A New Home for<br />
+            Game Lovers
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam.
+          </p>
+          <a href="#" class="btn">Join Now</a>
+        </div>
+        <img src="assets/img/Battlefield-PNG-Image.png" />
+      </div>
     </div>
-    <div class="elder-flex">
-        <div class="flexbox-container1">
-            <div class="game">
-                <a class="link-to-game">Go To Page</a>
+
+    <!-- About -->
+    <div class="about">
+      <div class="contentBx">
+        <h2>About Us</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <a href="#">Read More</a>
+      </div>
+      <img src="assets/img/ODST_-_Empty_Background (1).webp" alt="">
+    </div>
+
+    
+
+    <!-- Games -->
+<div class="games">
+    <h2>Popular Games</h2>
+    <ul>
+       <li class="list active" >All</li>
+       <li class="list">Pc Games</li>
+       <li class="list">Console Games</li>
+    </ul>
+    <div class="cardBx">
+        <div class="card" data-item="pc">
+            <img src="assets/img/game-1.jfif" alt="">
+            <div class="content">
+                <h4>Game Name</h4>
+                <div class="process-line"><span></span></div>
+                <div class="info">
+
+                </div>
             </div>
-            <div class="game">
-                <a class="link-to-game">Go To Page</a>
-            </div>
-            <div class="game">
-                <a class="link-to-game">Go To Page</a>
-            </div>
-            <div class="game">
-                <a class="link-to-game">Go To Page</a>
-            </div>
-            <div class="game">
-                <a class="link-to-game">Go To Page</a>
-            </div>
-            <div class="game" id="game-6">
-                <a class="link-to-game" href="./index.html">Go To Page</a>
-            </div>    
         </div>
     </div>
-</body>
+</div>
+    <script>
+        /*Sticky NavBar*/
+        window.addEventListener('scroll',function(){
+            var header = document.querySelector('header');
+            header.classList.toggle('sticky',window.scrollY > 0);
+        });
+    </script>
+  </body>
 </html>
