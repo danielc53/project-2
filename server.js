@@ -3,7 +3,8 @@ const express = require('express');
 const app = express();
 const sequelize = require('./config/connection');
 const dotenv = require('dotenv');
-const postRouter = require('./controllers/api/postRoutes')
+const postRouter = require('./controllers/api/postRoutes');
+
 
 dotenv.config();
 const PORT = process.env.PORT || 3001;
