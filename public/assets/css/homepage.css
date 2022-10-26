@@ -4,7 +4,7 @@
 }
 
 :root {
-    /* background-image: url(../img/alternate-background.png); */
+    background-image: url(../img/alternate-background.png);
     /* Color pallet options 1 (match login background) */
     --deep-champagne: #FFD699;
     --congo_pink: #FF8380;
@@ -28,4 +28,33 @@
     width: 80px;
     background-repeat: no-repeat;
     
+}
+
+.elder-flex {
+    display: flex;
+    justify-content: center;
+}
+
+.flexbox-container1 {
+    min-height: 630px;
+    max-width: 1650px;
+    border: 1px solid black;
+    margin: 3% 10% 3% 10% ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #FF8380;
+}
+
+.game {
+    height: 400px;
+    width: 400px;
+    outline: 1px solid black;
+    margin: 2% 4% 2% 4%;
+    background-color: #567D9A;
+}
+
+.link-to-game {
+    justify-content: center;
+    align-items: flex-end;
 }

@@ -5,11 +5,13 @@ const sequelize = require('./config/connection');
 const dotenv = require('dotenv');
 const postRouter = require('./controllers/api/postRoutes');
 
+
 dotenv.config();
 const PORT = process.env.PORT || 3001;
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+//gets the register page when the server is started
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/api/posts', postRouter)
 
