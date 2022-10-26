@@ -15,7 +15,7 @@ Post.init(
             type: DataTypes.STRING,
             allowNull: false,
         },
-        post_message: {
+        message: {
             type: DataTypes.STRING,
             allowNull: false,
         },
@@ -33,9 +33,7 @@ Post.init(
         freezeTableName: true,
         underscored: true,
         modelName: 'post',
-        modelName: 'Post',
-        modelName: 'Post',
-      }
+    }
 );
 
 module.exports = Post;

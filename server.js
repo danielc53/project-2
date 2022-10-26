@@ -6,6 +6,7 @@ const dotenv = require('dotenv');
 const routes = require('./controllers');
 const sequelize = require('./config/connection');
 
+
 dotenv.config();
 
 const app = express();
@@ -14,7 +15,7 @@ const PORT = process.env.PORT || 3001;
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-// defaults to index.html VVV
+//gets the register page when the server is started
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(routes);

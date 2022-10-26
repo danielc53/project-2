@@ -1,0 +1,12 @@
+* {
+    margin: auto;
+    padding: auto;
+    height: 100%;
+}
+
+.flexbox {
+    padding-top: 20%;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+}
