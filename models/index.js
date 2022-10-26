@@ -1,4 +1,4 @@
-const User = require('./User');
+/*const User = require('./User');
 const Game = require('./Game');
 const Post = require('./Post')
 
@@ -9,3 +9,4 @@ Post.belongsTo(User,{
 
 
 module.exports = {User,Game,Post};
+*/

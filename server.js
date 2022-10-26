@@ -1,19 +1,23 @@
 const path = require('path');
 const express = require('express');
-const app = express();
-const sequelize = require('./config/connection');
+const exphbs = require('express-handlebars');
+
 const dotenv = require('dotenv');
-const postRouter = require('./controllers/api/postRoutes');
+const routes = require('./controllers');
+const sequelize = require('./config/connection');
 
 dotenv.config();
+
+const app = express();
 const PORT = process.env.PORT || 3001;
+
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+// defaults to index.html VVV
 app.use(express.static(path.join(__dirname, 'public')));
-app.use('/api/posts', postRouter)
 
-
+app.use(routes);
 
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () =>
