@@ -102,3 +102,9 @@ VALUES ("Minecraft", "", true, true),
        ("Forza Horizon 5", "", true, true),
        ("Far Cry 6", "", true, true),
        ("Battlefield 2042", "", true, true),
+
+INSERT INTO users (firstName, lastName, userName, passwordHash, email)
+VALUES 
+    ("Jack", "Phillips", "Jack41400", 12345, "jack@email.com"),
+	("Ayoub", "Bility", "bilityA", 12345, "Ayoub@email.com"),
+    ("Isain", "Ibarra", "Isain1", 12345, "isain@email.com");
