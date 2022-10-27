@@ -1,0 +1,26 @@
+[
+    {
+        "first_name": "Jake",
+        "last_name": "Lucky",
+        "username": "Darkfun",
+        "bio": "apple is bad",
+        "email": "hasderd2001@gmail.com",
+        "password": "green day"
+    },
+    {
+        "first_name": "Sam",
+        "last_name": "Wocky",
+        "username": "Farmadd37",
+        "bio": "I love gaming",
+        "email": "farm37@yahoo.com",
+        "password": "darci"
+    },
+    {
+        "first_name": "Fake",
+        "last_name": "Person",
+        "username": "hankypanky",
+        "bio": "life is good, life is great",
+        "email": "naimes@gmail.com",
+        "password": "231454"
+    }
+]

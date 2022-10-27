@@ -18,9 +18,6 @@ Post.init(
         message: {
             type: DataTypes.STRING,
             allowNull: false,
-        },
-        user_post: {
-            type: DataTypes.STRING,
             references: {
                 model: 'user',
                 key: 'id',
