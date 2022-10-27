@@ -339,3 +339,7 @@ header .action .searchBx input {
     color: #171370;
     box-shadow: 0 0 10px #1aeeef;
   }
+
+  .games .cardBx .card.hide{
+    display: none;
+  }
