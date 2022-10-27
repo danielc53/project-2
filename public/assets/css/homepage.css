@@ -112,8 +112,12 @@ header .action .searchBx input {
 }
 
 .banner .bg .content {
-  width: 50%;
+  width: 60%;
   height: 100%;
+  background: rgb(27 33 65 / 50%);
+  padding: 20px;
+  z-index: 1;
+  border-radius: 10px;
 }
 
 .banner .bg .content h2 {
@@ -148,8 +152,9 @@ header .action .searchBx input {
 }
 
 .banner .bg img {
-  width: 400px;
-  height: 550px;
+  width: 500px;
+  height: 650px;
+  position: absolute;
 }
 
 /* About */
@@ -346,23 +351,46 @@ header .action .searchBx input {
 
 /* Responsive Page*/
 
-@media (max-width: 991px)
-{
-    header
-    {
-        padding: 15px 40px;
-    }
-    header .nav{
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: #171370;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-       z-index: 1000;
-    }
+@media (max-width: 991px) {
+  header {
+    padding: 15px 40px;
+  }
+  header .nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #171370;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1000;
+  }
+
+  header .nav li {
+    margin: 20px 0;
+  }
+  header .nav li a {
+    font-size: 24px;
+    margin: 10px 0;
+  }
+  .toggleMenu {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: url(menu.png);
+    background-position: center;
+    background-size: 30px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    z-index: 1001;
+  }
+  .toggleMenu.active {
+    background: url(close.png);
+    background-position: center;
+    background-size: 30px;
+    background-repeat: no-repeat;
+  }
 }
