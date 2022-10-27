@@ -4,6 +4,7 @@ const app = express();
 const sequelize = require('./config/connection');
 const dotenv = require('dotenv');
 const postRouter = require('./controllers/api/postRoutes');
+const authRouter = require('./controllers/api/authRoute');
 
 
 dotenv.config();
@@ -14,6 +15,8 @@ app.use(express.urlencoded({ extended: true }));
 //gets the register page when the server is started
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/api/posts', postRouter)
+app.use('/api/auth', authRouter)
+
 
 
 
