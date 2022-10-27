@@ -318,28 +318,51 @@ header .action .searchBx input {
 }
 
 .games .cardBx .card .info p span {
-    color: #1aeeef;
+  color: #1aeeef;
 }
 
 .games .cardBx .card .info a {
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 20px 0;
-    border: 1px solid #1aeeef;
-    text-decoration: none;
-    font-weight: 700;
-    border-radius: 5px;
-    color: #fff;
-    letter-spacing: 1px;
-  }
-  
-  .games .cardBx .card .info a:hover {
-    background: #1aeeef;
-    border: none;
-    color: #171370;
-    box-shadow: 0 0 10px #1aeeef;
-  }
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 20px 0;
+  border: 1px solid #1aeeef;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 5px;
+  color: #fff;
+  letter-spacing: 1px;
+}
 
-  .games .cardBx .card.hide{
-    display: none;
-  }
+.games .cardBx .card .info a:hover {
+  background: #1aeeef;
+  border: none;
+  color: #171370;
+  box-shadow: 0 0 10px #1aeeef;
+}
+
+.games .cardBx .card.hide {
+  display: none;
+}
+
+/* Responsive Page*/
+
+@media (max-width: 991px)
+{
+    header
+    {
+        padding: 15px 40px;
+    }
+    header .nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #171370;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+       z-index: 1000;
+    }
+}
