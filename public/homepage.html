@@ -15,9 +15,9 @@
     <header>
       <a href="#" class="logo">Gammers</a>
       <ul class="nav">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Games</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#games">Games</a></li>
         <li><a href="#">Login</a></li>
       </ul>
       <div class="action">
@@ -26,7 +26,7 @@
           <input type="text" placeholder="Search Games" />
         </div>
       </div>
-      <div class="toggleMenu"></div>
+      <div class="toggleMenu" onclick="toggleMenu();"></div>
     </header>
 
     <!-- Home Banner -->
@@ -148,24 +148,30 @@
           </div>
         </div>
         <div class="card" data-item="console games">
-            <img src="assets/img/game-10.jfif" alt="" />
-            <div class="content">
-              <h4>Halo Infinite</h4>
-              <div class="process-line"><span></span></div>
-              <div class="info"></div>
-            </div>
+          <img src="assets/img/game-10.jfif" alt="" />
+          <div class="content">
+            <h4>Halo Infinite</h4>
+            <div class="process-line"><span></span></div>
+            <div class="info"></div>
           </div>
+        </div>
       </div>
     </div>
 
-
-    
     <script>
       /*Sticky NavBar*/
       window.addEventListener("scroll", function () {
         var header = document.querySelector("header");
         header.classList.toggle("sticky", window.scrollY > 0);
       });
+
+      /* Responsive Navbar*/
+      function toggleMenu() {
+        const toggleMenu = document.querySelector("toggleMenu");
+        const nav = document.querySelector('nav');
+        toggleMenu.classList.toggle('active')
+        nav.classList.toggle('toggle')
+      }
 
       /* Filterable Cards*/
       let list = document.querySelectorAll(".list");
