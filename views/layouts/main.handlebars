@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/homepage.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Home Page</title>
+  </head>
+
+  <body>
+    <header>
+      <a href="#" class="logo">Gammers</a>
+      <ul class="nav">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#games">Games</a></li>
+        {{#if logged_out}}
+            <li><a href="#">Login</a></li>
+        {{/if}}
+        {{#if logged_in}}
+            <li><a href="">Logout</a></li>
+        {{/if}}
+      </ul>
+      <div class="action">
+        <div class="searchBx">
+          <a href="#"><i class="bx bx-search"></i></a>
+          <input type="text" placeholder="Search Games" />
+        </div>
+      </div>
+      <!-- <div class="toggleMenu" onclick="toggleMenu()"></div> -->
+    </header>
+
+    <main>
+        {{{body}}}
+    </main>
+
+    <script>
+        window.addEventListener("scroll", function () {
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+      });
+    </script>
+  </body>
