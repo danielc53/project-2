@@ -1,4 +1,4 @@
-/*const { Model, DataTypes } = require('sequelize');
+const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
 class Post extends Model {}
@@ -18,9 +18,6 @@ Post.init(
         message: {
             type: DataTypes.STRING,
             allowNull: false,
-        },
-        user_post: {
-            type: DataTypes.STRING,
             references: {
                 model: 'user',
                 key: 'id',
@@ -37,4 +34,3 @@ Post.init(
 );
 
 module.exports = Post;
-*/
