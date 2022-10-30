@@ -108,3 +108,8 @@ VALUES
     ("Jack", "Phillips", "Jack41400", 12345, "jack@email.com"),
 	("Ayoub", "Bility", "bilityA", 12345, "Ayoub@email.com"),
     ("Isain", "Ibarra", "Isain1", 12345, "isain@email.com");
+
+Insert INTO game_posts (gameID, userID, messageContent)
+VALUES
+    (1, 1, "TEST MESSAGE"),
+    (1, 2, "TEST MESSAGE");

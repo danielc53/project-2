@@ -1,4 +1,3 @@
--- DROP DATABASE
 -- DROP DATABASE IF EXISTS gamers_db;
 
 -- CREATE DATABASE
@@ -11,7 +10,7 @@ CREATE TABLE games (
     gameTitle VARCHAR(64) NOT NULL,
     summary VARCHAR(255),
     onlineStatus BOOLEAN,
-    singlePlayer BOOLEAN,
+    singlePlayer BOOLEAN
 );
 
 CREATE TABLE users (

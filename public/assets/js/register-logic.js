@@ -16,7 +16,7 @@ submit.addEventListener('click', async (e) => {
     }
     console.log(formBody);
 
-    const response = await fetch('/api/auth/register', {
+    const response = await fetch('../../../controllers/api/authRoute.js', {
         method: 'POST',
         body: JSON.stringify(formBody),
         headers: {
