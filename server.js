@@ -1,9 +1,11 @@
 const path = require('path');
 const express = require('express');
 const exphbs = require('express-handlebars');
+const hbs = require('handlebars');
 
 // Import express-session
 const session = require('express-session');
+const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
 const routes = require('./controllers');
 const sequelize = require('./config/connection');
@@ -16,8 +18,8 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 
-app.engine('handlebars', hbs.engine);
-app.set('view engine', 'handlebars');
+// app.engine('handlebars', hbs.engine);
+// app.set('view engine', 'handlebars');
 
 // Set up sessions
 const sess = {
@@ -39,8 +41,9 @@ app.use(session(sess));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 //gets the register page when the server is started
+//register route in homeroutes is not needed because this will serve up the index
 app.use(express.static(path.join(__dirname, 'public')));
-app.use('/api/posts', postRouter)
+// app.use('/api/posts', postRouter)
 
 
 app.use(routes);
