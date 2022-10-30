@@ -192,6 +192,7 @@ header .action .searchBx input {
 }
 
 .about .contentBx h2 {
+  padding-top: 70px;
   font-size: 3em;
   font-weight: 700;
   color: #fff;
