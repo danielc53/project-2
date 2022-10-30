@@ -6,6 +6,7 @@ const userNameInput = document.getElementById('username-input');
 const passwordInput = document.getElementById('password-input');
 
 submit.addEventListener('click', async (e) => {
+    try{ 
     e.preventDefault()
     const formBody = {
         first_name: firstName.value,
@@ -15,7 +16,8 @@ submit.addEventListener('click', async (e) => {
         password: passwordInput.value,
     }
     console.log(formBody);
-
+    //responds with 404 not found
+    //api/authRoute/register :: ../../../../controllers/api/authRoute/reigster :: /api/auth :: /api/authRoute :: /controllers/api/authRoute/reigster :: /controllers/api/authRoute :: /controllers/api/auth
     const response = await fetch('/api/auth/register', {
         method: 'POST',
         body: JSON.stringify(formBody),
@@ -26,7 +28,10 @@ submit.addEventListener('click', async (e) => {
         return res.json()
     })
     console.log('response', response)
-})
+    } catch (err) {
+        console.log(err)
+    }
+});
 
 
 
