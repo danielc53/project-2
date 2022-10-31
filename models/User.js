@@ -48,6 +48,22 @@ User.init(
             len: [6],
         },
     },
+    game1: {
+        type: DataTypes.STRING,
+        allowNull: false,
+    },
+    game2: {
+        type: DataTypes.STRING,
+        allowNull: false,
+    },
+    game3: {
+        type: DataTypes.STRING,
+        allowNull: false,
+    },
+    game4: {
+        type: DataTypes.STRING,
+        allowNull: false,
+    },
   },
   {
     hooks: {
