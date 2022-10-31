@@ -43,7 +43,7 @@ app.use(express.urlencoded({ extended: true }));
 //gets the register page when the server is started
 //register route in homeroutes is not needed because this will serve up the index
 app.use(express.static(path.join(__dirname, 'public')));
-// app.use('/api/posts', postRouter)
+// app.use('/api/posts', postRouter) (I don't know why this is in here)
 
 
 app.use(routes);
