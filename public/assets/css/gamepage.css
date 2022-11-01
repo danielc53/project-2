@@ -13,12 +13,14 @@
 .container {
   display: flex;
   justify-content: center;
+  padding-top: 190px;
 }
 .card {
   background-color: var(--steel-blue);
   width: 720px;
   margin: 10px;
   border-radius: 15px;
+  
 }
 .card-image {
   height: 170px;
