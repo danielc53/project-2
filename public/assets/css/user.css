@@ -11,6 +11,7 @@
     --persian-rose: #F2379A;
     --steel-blue: #567D9A;
     --spanish-violet: #452386;
+    --fonts: monospace;
 }
 
 /* defines size and color of the parent navbar */
@@ -44,6 +45,7 @@
     flex-grow: 1;
     margin: 2% 5% 2% 2%;
     background-color: #567D9A;
+    max-width: 35%;
 }
 
 .flexbox-info {
@@ -51,6 +53,8 @@
     flex-grow: 1;
     margin: 2% 2% 2% 5%;
     background-color: #567D9A;
+    max-width: 50%;
+    font-size: 25px;
 }
 
 .flexbox-container2 {
@@ -70,3 +74,104 @@
     margin: 2% 4% 2% 4%;
     background-color: #567D9A;
 }
+
+#profile-picture {
+    max-height: 150%;
+    max-width: 90%;
+    display: flex;
+    justify-content: center;
+    margin-left: 20px;
+}
+
+#name {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-family: var(--fonts);
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
+    font-family: var(--fonts);
+    margin-bottom: 15px;
+}
+
+p {
+    font-family: var(--fonts);
+    font-size: 22px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 7px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--congo_pink);
+    transition: 0.1s;
+    z-index: 1000;
+  }
+  
+  header.sticky {
+    background: var(--steel-blue);
+    box-shadow: 0 5px 10px rgba(249, 248, 248, 0.201);
+  }
+  
+  header .logo {
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: 700;
+  }
+  
+  header .nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  header ul li {
+    list-style: none;
+    margin: 10px;
+  }
+  
+  header ul li a {
+    color: rgb(5, 0, 0);
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  
+  header ul li a:hover {
+    background: var(--congo_pink);
+    color: black;
+    box-shadow: 0 0 10px var(--congo_pink);
+  }
+  
+  header .action .searchBx {
+    padding: 5px;
+    margin: 5px;
+    justify-content: center;
+    background: #fff;
+    border-radius: 5px;
+  }
+  
+  header .action .searchBx i {
+    font-size: 1.4em;
+    margin: 5px;
+    color: #222;
+  }
+  
+  header .action .searchBx input {
+    outline: none;
+    border: none;
+    font-size: 1em;
+    color: #222;
+  }
