@@ -5,6 +5,9 @@ router.get('/', async (req, res) =>
     res.sendFile(path.join(__dirname, '../public/homepage.html'))
 );
 
+router.get('/games', async (req, res) =>
+    res.sendFile(path.join(__dirname, '../public/games.html')))
+
 router.get('/login', async (req, res) =>
     res.sendFile(path.join(__dirname, '../public/login.html'))
 );
