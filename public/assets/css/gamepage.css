@@ -8,19 +8,15 @@
   --spanish-violet: #452386;
 }
 
-
 /* defines home icon size and position inside of navbar */
-
-
 
 .container {
   display: flex;
   justify-content: center;
 }
 .card {
-  background-color: #452386;
+  background-color: var(--steel-blue);
   width: 720px;
-  height: 400px;
   margin: 10px;
   border-radius: 15px;
 }
@@ -31,18 +27,38 @@
   border-radius: 15px 15px 0 0;
 }
 
-.card-1{
+.card-1 {
   background-image: url(../img/game-1.jfif);
 }
 
-.card-2{
+.card-2 {
   background-image: url(../img/game-2.jpg);
 }
 
-.card-3{
+.card-3 {
   background-image: url(../img/game-3.jfif);
 }
 
+.card p {
+  padding: 10px;
+}
+
+.card a {
+  background-color: var(--deep-champagne);
+  color: var(--persian-rose);
+  padding: 15px 20px;
+  display: block;
+  text-align: center;
+  margin: 20px 50px;
+}
+
+.card:hover{
+  background: rgb(22, 114, 167);
+  color: var(--deep-champagne);
+  cursor: pointer;
+  transform: scale(1.03); 
+  transition: all 0.3s ease-in-out;
+}
 
 .games {
   padding: 0px 100px;
