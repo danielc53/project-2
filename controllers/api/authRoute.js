@@ -1,6 +1,7 @@
 const { Router } = require('express');
 const router = Router();
-const user = require('../../models/User')
+const user = require('../../models/User');
+const jwt = require('jsonwebtoken');
 
 router.post('/register', async (req, res) => {
     const newUser = req.body;
@@ -33,6 +34,11 @@ router.post('/login', async (req, res) => {
         user: dbUser
     })
 });
+
+router.post('/logout', async (req,res) => {
+    req.session.destroy();
+    return res.status(200).send();
+})
 
 
 module.exports = router
