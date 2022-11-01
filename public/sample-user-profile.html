@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/homepage.css">
+    <title>William's Profile</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Gamers</a>
+        <ul class="nav">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#games">Games</a></li>
+          <li><a href="">Logout</a></li>
+        </ul>
+        <div class="action">
+          <div class="searchBx">
+            <a href="#"><i class="bx bx-search"></i></a>
+            <input type="text" placeholder="Search Games" />
+          </div>
+        </div>
+        <!-- <div class="toggleMenu" onclick="toggleMenu()"></div> -->
+      </header>
+    <div class="flexbox-container1">
+        <div class="flexbox-profile-pic">
+            <h1 id="name">Sample Profile</h1>
+            <img src="assets/img/sample-profile-picture.jpg" id="profile-picture"> 
+        </div>
+        
+        <div class="flexbox-info">
+            <h3>Sample User Bio</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            </p>
+        </div>
+    </div>
+    <div class="flexbox-container2">
+        <img src="assets\img\sample-game.jpg" class="game">
+        <img src="assets\img\game-6.jpg" class="game">
+        <img src="assets\img\game-7.jpg" class="game">
+        <img src="assets\img\game-8.jpg" class="game">
+        <img src="assets\img\game-2.jpg" class="game">
+        <img src="assets\img\game-11.jpg" class="game">
+        
+    </div>
+    <script>
+        window.addEventListener("scroll", function () {
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+      });
+    </script>
+</body>
+</html>
