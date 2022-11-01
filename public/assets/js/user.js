@@ -1,3 +1,9 @@
+let subMenu = document.getElementById("subMenu");
+
+function toggleMenu() {
+  subMenu.classList.toggle("open-menu");
+}
+
 window.addEventListener("scroll", function () {
   var header = document.querySelector("header");
   header.classList.toggle("sticky", window.scrollY > 0);
