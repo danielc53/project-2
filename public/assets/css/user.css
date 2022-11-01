@@ -1,10 +1,5 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
 :root {
-    background-image: url(../img/alternate-background.png);
+    /* background-image: url(../img/alternate-background.png); */
     /* Color pallet options 1 (match login background) */
     --deep-champagne: #FFD699;
     --congo_pink: #FF8380;
@@ -13,53 +8,52 @@
     --spanish-violet: #452386;
 }
 
-/* defines size and color of the parent navbar */
-.navbar {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.hero{
+    width: 100%;
+    min-height: 100vh;
+    color: var(--steel-blue);
+}
+
+nav{
+    background: var(--congo_pink);
+    width: 100%;
+    padding:10px 10%;
     display: flex;
-    border: 1px solid black;
-    height: 80px;
-    background-color: var(--deep-champagne);
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
 }
 
-/* defines home icon size and position inside of navbar */
-.home-btn {
-    background-image: url(../img/home-icon.png);
-    height: 80px;
-    width: 80px;
-    background-repeat: no-repeat;
+.user-pic{
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 30px;
 }
 
-
-
-.flexbox-container1 {
-    display: flex;
-    border: 1px solid black;
-    height: 450px;
-    margin: 8% 8% 3% 8%;
-    background-color: #FF8380;
+nav ul{
+    width: 100%;
+    text-align: right;
 }
 
-.flexbox-profile-pic {
-    border: 1px solid black;
-    flex-grow: 1;
-    margin: 2% 5% 2% 2%;
-    background-color: #567D9A;
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
 }
 
-.flexbox-info {
-    border: 1px solid black;
-    flex-grow: 1;
-    margin: 2% 2% 2% 5%;
-    background-color: #567D9A;
+nav ul li a {
+    color: black;
+    text-decoration: none;
 }
 
-.flexbox-container2 {
-    min-height: 630px;
-    border: 1px solid black;
-    margin: 3% 8% 8% 8% ;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    background-color: #FF8380;
+nav h2{
+    color: #fff;
 }
-
