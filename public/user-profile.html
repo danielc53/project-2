@@ -18,17 +18,39 @@
         </ul>
         <img
           src="assets/img/iconmonstr-user-circle-thin-96.png"
-          class="user-pic"
-        />
-        <div class="sub-menu-wrap">
+          class="user-pic" onclick="toggleMenu()"/>
+        <div class="sub-menu-wrap" id="subMenu">
           <div class="sub-menu">
             <div class="user-info">
-              <img src="assets/img/iconmonstr-user-circle-thin-96.png" alt="" />
-              <h2>Isain Ibarra</h2>
+              <img src="assets/img/iconmonstr-user-circle-thin-96.png"  />
+              <h3>Isain Ibarra</h3>
             </div>
+            <hr>
+            <a href="#" class="sub-menu-link">
+                <img src="assets/img/iconmonstr-user-circle-thin-96.png" >
+                <p>Edit Profile</p>
+                <span>></span>
+            </a>
+            <a href="#" class="sub-menu-link">
+                <img src="assets/img/iconmonstr-gear-thin-24.png" >
+                <p>Settings & Privacy</p>
+                <span>></span>
+            </a>
+            <a href="#" class="sub-menu-link">
+                <img src="assets/img/iconmonstr-help-6-24.png" >
+                <p>Help & Support</p>
+                <span>></span>
+            </a>
+            <a href="#" class="sub-menu-link">
+                <img src="assets/img/iconmonstr-log-out-3-24.png" >
+                <p>Logout</p>
+                <span>></span>
+            </a>
           </div>
         </div>
       </nav>
     </div>
+
+    <script src="assets/js/user.js"></script>
   </body>
 </html>
