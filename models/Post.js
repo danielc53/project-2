@@ -29,7 +29,7 @@ Post.init(
         timestamps: true,
         freezeTableName: true,
         underscored: true,
-        modelName: 'game_posts',
+        modelName: 'games',
     }
 );
 
