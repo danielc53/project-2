@@ -4,6 +4,10 @@ const lastName = document.getElementById('last-name-input');
 const emailInput = document.getElementById('email-input');
 const userNameInput = document.getElementById('username-input');
 const passwordInput = document.getElementById('password-input');
+const game1 = document.getElementById('game1');
+const game2 = document.getElementById('game2');
+const game3 = document.getElementById('game3');
+const game4 = document.getElementById('game4');
 
 submit.addEventListener('click', async (e) => {
     try{ 
@@ -14,6 +18,10 @@ submit.addEventListener('click', async (e) => {
         email: emailInput.value,
         username: userNameInput.value,
         password: passwordInput.value,
+        // game1: game1.value,
+        // game2: game2.value,
+        // game3: game3.value,
+        // game4: game4.value,
     }
     console.log(formBody);
     //responds with 404 not found
