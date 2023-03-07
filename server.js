@@ -1,7 +1,7 @@
 const path = require('path');
 const express = require('express');
-const exphbs = require('express-handlebars');
-const hbs = exphbs.create({});
+// const exphbs = require('express-handlebars');
+// const hbs = exphbs.create({});
 
 // Import express-session
 const session = require('express-session');
@@ -18,8 +18,8 @@ const app = express();
 const PORT = process.env.PORT || 3002;
 
 
-app.engine('handlebars', hbs.engine);
-app.set('view engine', 'handlebars');
+// app.engine('handlebars', hbs.engine);
+// app.set('view engine', 'handlebars');
 
 // Set up sessions
 const sess = {
